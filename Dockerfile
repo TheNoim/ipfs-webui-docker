@@ -15,4 +15,6 @@ COPY --from=0 /app/ipfs-webui/build/ /app/build
 
 RUN npm install http-server -g
 
+EXPOSE 8080
+
 CMD ["hs", "build"]
